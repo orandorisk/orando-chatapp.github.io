@@ -1,0 +1,303 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    /* Text */
+    --palevio: hsl(276, 100%, 81%);
+    --modevio: hsl(276, 55%, 52%);
+    --darkvio: hsl(271, 15%, 43%);
+    --grayblue: hsl(206, 6%, 79%);
+    --desvio: hsl(271, 36%, 24%);
+    --grayvio: hsl(270, 7%, 64%);
+    /* BGPATERN */
+    --lightmag: hsl(293, 100%, 63%);
+    --lightvioa: hsl(264, 100%, 61%);
+    /* SECOND */
+    --putih: hsl(0, 0%, 100%);
+    --lightvio: rgb(245, 244, 244);
+    --lightvio1: rgb(243, 237, 243);
+    --desvio: hsl(271, 36%, 24%);
+    --ligmag: hsl(289, 100%, 72%);
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--putih);
+    position: relative;
+    padding: 100px 0px 100px 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik',
+        sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    height: 600px;
+    display: flex;
+}
+
+/* BACKGROUND PATERN */
+.bg-patern-left {
+    position: absolute;
+    width: 440px;
+    height: 550px;
+    background: linear-gradient(45deg, var(--lightvioa), var(--lightmag));
+    border-radius: 0px 0px 260px 240px;
+    left: -60px;
+    top: 0px;
+}
+
+.bg-patern-right {
+    position: absolute;
+    height: 550px;
+    width: 360px;
+    bottom: 0px;
+    right: -60px;
+    background: linear-gradient(45deg, var(--putih), var(--lightvio));
+    border-radius: 240px 80px 0px 0px;
+}
+
+/* SMARTPHONE */
+.container .smartphone {
+    padding: 13px 10px 10px 10px;
+    border-radius: 2rem 2rem 1.8rem 1.8rem;
+    background-color: var(--putih);
+    position: relative;
+    box-shadow: 1px 4px 30px 5px rgba(0, 0, 0, 0.13);
+    height: 600px;
+}
+
+.container .content1 {
+    flex-grow: 1;
+}
+
+.content {
+    background-color: var(--lightvio);
+    border-radius: 2rem 2rem 1.8rem 1.8rem;
+    height: 100%;
+    width: 300px;
+}
+
+.content .top-profil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, var(--lightvioa), var(--lightmag));
+    border-radius: 30px 30px 6px 6px;
+    box-sizing: border-box;
+    padding: 0rem 1rem 0.5rem 1rem;
+}
+
+.bott .profil {
+    flex: 1;
+}
+
+.fa-chevron-left,
+.fa-ellipsis-v {
+    color: white;
+    align-self: center;
+}
+
+.bott {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-profil .blok {
+    display: inline-block;
+    width: 150px;
+    background-color: var(--putih);
+    margin: auto;
+    height: 20px;
+    margin-top: 0px;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.top-profil .avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0.14rem solid var(--lightvio);
+    align-self: center;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.profil h3,
+.profil p,
+.remind h3 {
+    color: var(--putih);
+}
+
+.profil h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profil p {
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+.content .left,
+.content .left1,
+.content .left2,
+.right .right1,
+.right .right2 {
+    background-color: hsl(276, 100%, 81%, 0.2);
+    color: var(--modevio);
+    border-radius: 1.1rem 1.1rem 1.1rem 0.3rem;
+    padding: 8px 10px 8px 10px;
+    width: 150px;
+    font-size: 0.65rem;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    font-weight: 450;
+}
+
+.content .left,
+.content .left1,
+.content .left2 {
+    margin: 10px 0px 10px 11px;
+}
+
+.pic {
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: flex-end;
+    margin: 1.2rem 0.6rem 0rem 0rem
+}
+
+.pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content .right1,
+.content .right2 {
+    align-self: flex-end;
+    color: var(--darkvio);
+    background-color: var(--putih);
+    border-radius: 1.1rem 1.1rem 0.3rem 1.1rem;
+    padding: 8px 0px 8px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content .right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    margin: 0.7rem 0.6rem 1.2rem 0rem;
+}
+
+.remind span {
+    display: block;
+    border: 0.04rem solid var(--putih);
+    border-radius: 50%;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.remind {
+    font-size: 0.65rem;
+    color: var(--putih);
+    background: linear-gradient(90deg, var(--lightvioa), var(--lightmag));
+    display: flex;
+    margin: 0.5rem 0rem 0rem 0.8rem;
+    width: 200px;
+    border-radius: 0.8rem 0.8rem 0.8rem 0.3rem;
+    justify-content: space-evenly;
+    padding: 12px 10px 12px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    letter-spacing: 0.06rem;
+}
+
+.search {
+    width: 280px;
+    margin: auto;
+    height: 40px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    background-color: var(--putih);
+    margin-top: 1rem;
+    font-size: 0.70rem;
+    align-items: center;
+    display: flex;
+    color: var(--palevio);
+    justify-content: space-between;
+    padding: 0rem 0.6rem 0rem 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search .fa-chevron-circle-right {
+    color: var(--darkvio);
+}
+
+/* CONTENT1 */
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 0rem 0rem 8rem;
+    z-index: 1;
+    line-height: 2;
+    color: var(--grayvio);
+}
+
+.content1 h2 {
+    align-self: flex-start;
+    font-size: 2rem;
+    color: var(--desvio);
+}
+
+/*MOBILE VERSION 380PX*/
+@media(max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .container .smartphone {
+        width: 320px;
+        margin: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .bg-patern-left {
+        left: -200px;
+    }
+
+    .bg-patern-right {
+        right: -200px;
+    }
+
+    .content1 {
+        text-align: center;
+        line-height: 1.8;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .content1 h2 {
+        align-self: center;
+        margin-bottom: 1.6rem;
+    }
+
+}
