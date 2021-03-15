@@ -74,10 +74,6 @@ body {
     height: 600px;
 }
 
-.container .content1 {
-    flex-grow: 1;
-}
-
 .content {
     background-color: var(--lightvio);
     border-radius: 2rem 2rem 1.8rem 1.8rem;

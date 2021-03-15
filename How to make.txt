@@ -1,0 +1,2 @@
+1.Pertama saya buat bagian background patern diluar container dan saya berikan border radius dan linear gradient kemudian saya tempatkan left dan right minus 200px kemudian body saya berikan overflow x agar ketutup selanjutnya saya berikan padding body agar content di tengah
+2.container saya buat flex dan berikan lebar max agar saat responsive ikut mengecil ini POKOK dan berikan tinggi dan margin auto agar ketengah selanjutnya bagian smartpone saya berikan 
